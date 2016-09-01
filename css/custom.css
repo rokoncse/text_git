@@ -1,0 +1,362 @@
+/* =======================================================================
+FREDERICIA - HTML5 Website
+======================================================================= */
+
+/***
+[Master Stylesheet]
+TABLE OF CONTENTS:;
+***/
+@font-face {
+  font-family:'MontefioreShadow-Regular';
+  src: url('../fonts/MontefioreShadow/MontefioreShadow-_gdi.eot');
+  src: url('../fonts/MontefioreShadow/MontefioreShadow-_gdi.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MontefioreShadow/MontefioreShadow-_gdi.woff') format('woff'),
+       url('../fonts/MontefioreShadow/MontefioreShadow-_gdi.ttf') format('truetype'),
+       url('../fonts/MontefioreShadow/MontefioreShadow-_gdi.svg#MontefioreShadow-Regular') format('svg');
+       font-weight: 700;
+       font-style: normal;
+}
+body {
+  direction: ltr;
+  font-family: verdana;
+  color:#333;
+}
+.wrapper {
+	max-width: 768px;
+	margin: 0 auto;
+}
+/*Common snippets
+=======================================*/
+
+/* --------------------------------------
+=========================================
+GLOBAL STYLES
+=========================================
+-----------------------------------------*/
+
+
+/*typography*/
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+h1{
+    font-family: "MontefioreShadow-Regular";
+    font-size: 43px;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "MontefioreShadow-Regular"; 
+}
+
+h3 {
+   font-size: 20px;
+   font-weight: bold;
+   line-height: 24px;
+}
+
+h4{
+  font-size: 15px;
+  line-height: normal;
+  font-weight: bold;
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a:focus{
+	outline: none;
+}
+.italic {
+  font-style: italic;
+}
+.hints {
+  font-size: 15px;
+}
+.mb30{
+  margin-bottom: 30px;
+}
+/*buttons*/
+.btn-green {
+  background: #056839;
+}]
+.btn-green:hover {
+  background: #056839;
+}
+.btn-pink {
+  background: #e6007e;
+}
+/*---------------------------------------
+ **   SECTION:  HEADER              -----
+-----------------------------------------*/
+
+.logoPlaceholder {
+  min-height: 378px;
+  background: #e9511e;
+  padding-top: 90px;
+}
+.logoPlaceholder a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.logoPlaceholder a img {
+  margin: 0 auto;
+}
+.elementsContainer  {
+  background: url(../images/backdrop.png) no-repeat center top;
+  min-height: 820px;
+  background-size: cover;
+  text-align: center;
+}
+.elementsContainer p, .elementsContainer h3 {
+  text-align: center;
+  color: #fff;
+}
+.elementsContainer {
+  padding: 60px 20px;
+}
+.elementsContainer h3 {
+  margin-bottom: 20px;
+}
+.elementsContainer p {
+  font-size: 20px;
+  line-height: 24px;
+}
+.newsletter_frm {
+  max-width: 400px;
+  margin: 30px auto 0 auto;
+}
+.form-horizontal input, .form-horizontal textarea {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0;
+  color: #666;
+ 
+}
+
+.form-horizontal input[type="text"], 
+.form-horizontal input[type="number"],
+.form-horizontal input[type="email"],
+.form-horizontal textarea {
+  padding: 0 20px;
+  font-style:italic;
+}
+.form-horizontal textarea{
+   resize:none;
+   min-height: 112px;
+   padding-top: 4px; 
+}
+.nLetter {
+  height: 50px;
+  max-width: 400px;
+  width: 100%;
+  border: 2px solid #808080 !important;
+}
+.form-horizontal  {
+  text-align: center;
+}
+.btn {
+  border: medium none;
+  border-radius: 0;
+  color: #fff;
+  width: 160px;
+  font-weight: bold;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.h_center {
+  margin: 0 auto;
+}
+.artistLandscape {
+  margin-bottom: 30px;
+}
+/*user form*/
+.user_frm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.user_frm .form-control {
+  height: 30px;
+  font-size: 12px;
+}
+.user_frm  .form-group {
+  margin-bottom: 10px;
+}
+
+.t_c {
+  display: block;
+  font-size: 10px;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.checkbox {
+  text-align: left;
+}
+.req_fld {
+  text-align: left;
+  display: block;
+  font-size: 12px;  
+}
+.checkbox label, .radio label {
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+input[type="checkbox"], input[type="radio"] {
+  margin-top: 0;
+}
+
+/*validation*/
+.formError .formErrorContent {
+    background: #e6007e none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    box-shadow: 0 0 6px #000;
+    font-size: 9px;
+    padding: 4px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+.formError .formErrorArrow {
+    display: none;
+}
+.formError {
+    left: -115px !important;
+    top: 25px !important;
+}
+.form-horizontal .checkbox, .form-horizontal .radio {
+    min-height: 10px;
+}
+.checkbox .formError {
+    left: -130px !important;
+    top: 27px !important;
+}
+.checkbox input[type="checkbox"], 
+.checkbox-inline input[type="checkbox"], 
+.radio input[type="radio"], 
+.radio-inline input[type="radio"] {
+    top: 15px;
+}
+.formError ~ .form-control::-webkit-input-placeholder { color: #e6007e; font-weight: bold; }
+.formError ~ .form-control:-moz-placeholder { /* Firefox 18- */   color: #e6007e; font-weight: bold;}
+.formError ~ .form-control::-moz-placeholder {  /* Firefox 19+ */  color: #e6007e; font-weight: bold;  }
+.formError ~ .form-control:-ms-input-placeholder {  color: #e6007e; font-weight: bold;}
+
+.greenTitle {
+  color: #006633;
+  font-size: 70px;
+}
+.thanksContainer {
+  max-width: 635px;
+  margin: 30px auto 0 auto;
+  min-height: 360px;
+  background: #e5007d;
+  padding: 30px;
+}  
+.thanksContainer  h2{
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+.thanksContainer  p {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.thanksContainer  a { 
+  font-style: italic;
+  font-size: 12px;
+  display: block;
+  color: #fff;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+.contactFrm p{
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+.contactFrm .m_g_title {
+  color: #006633;
+  margin-bottom: 10px;
+  font-weight: bold; 
+}
+.whiteTitle {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+.contactFrm .user_frm {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.contactFrm .user_frm .form-group{
+  max-width: 400px;
+  margin: 0 auto;
+}
+.contactFrm  .user_frm .form-control {
+  height: 30px;
+  font-size: 12px;
+}
+.contactFrm .user_frm  .form-group {
+  margin-bottom: 10px;
+}
+.bigTxt {
+  font-size: 72px;
+  color: #006633;
+  line-height: 86px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.bigTxt span {
+  color: #fff;
+}
+/*modal*/
+.modal-dialog {
+    max-width: 440px;
+    width: 100%;
+}
+.modal-content {
+    background: #ec008c none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    text-align: center;
+}
+.modal-header {
+    border-bottom: 0 none;
+ }
+.close {
+    opacity: 1;
+    position: relative;
+    z-index: 999;
+} 
+.modal-body > h2 {
+    font-size: 60px;
+    line-height: 64px;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.modal-body > p {
+    font-size: 15px;
+    font-weight: bold;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.modal-dialog {
+    margin: 15% auto;
+ }

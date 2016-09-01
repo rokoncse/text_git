@@ -1,0 +1,41 @@
+
+@media (min-width: 768px) and (max-width: 1024px) {
+   
+}
+
+
+@media (max-width: 767px) {
+ 
+}
+
+@media (max-width: 660px) {
+  .logoPlaceholder {
+  	align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 250px;
+    padding-top: 30px;
+  }
+  .whiteTitle, .thanksContainer h2 {
+  	font-size: 40px;
+  }
+  .bigTxt {
+    font-size: 20px;
+    letter-spacing: 4px;
+    line-height: normal;
+  }
+  .user_frm .form-group {
+    margin-bottom: 20px;
+  }
+  .formError .formErrorContent {
+  	padding: 2px 4px;
+  }
+  .formError {
+    left: 15px !important;
+    top: -2px !important;
+  }
+  .checkbox .formError {
+    left: 0 !important;
+    top: 12px !important;
+  }
+}
